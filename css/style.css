@@ -464,8 +464,8 @@ a {
     height: 40px;
 }
 
-.soclink-list-footer:hover,
-.soclink-list-footer:focus {
+.soclink-svg-footer:hover,
+.soclink-svg-footer:focus {
     background-color: #31d0aa;
 }
 
@@ -482,7 +482,9 @@ a {
 .footer-fdiv {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .footer-logo {
     display: inline-block;
@@ -495,4 +497,8 @@ a {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+
+.footer-container {
+    margin-right: 120px;
 }
