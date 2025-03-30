@@ -243,19 +243,21 @@ li:hover .overlay {
 
 .portfolio-item:hover .first-text-portf {
     transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .portfolio-item {
-        width: calc((100% - 48px) / 3);
-    }
-
-.first-text-portf {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.first-text-portf {
+    
+}
 
 
 
@@ -297,9 +299,6 @@ li:hover .overlay {
     width: calc((100% - 72px) / 4); 
 }
 
-.portfolio-item {
-    width: calc((100% - 48px) / 3);
-}
 
 
 .portfolio-container {
@@ -454,19 +453,16 @@ li:hover .overlay {
 
 .icon-list-footer {
     display: flex;
-    gap: 16px;пш
+    gap: 16px;
+    width: 40px;
+    height: 40px;
 }
 
 
 
 .soclink-list-footer {
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 40px;
+    height: 40px;
 }
 
 .soclink-list-footer:hover,
@@ -474,7 +470,17 @@ li:hover .overlay {
     background-color: #31d0aa;
 }
 
-.footer-container {
+.soclink-svg-footer {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-fdiv {
     display: flex;
     align-items: baseline;
     margin-right: 120px;
