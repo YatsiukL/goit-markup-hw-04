@@ -452,10 +452,13 @@ a {
 
 .icon-list-footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     gap: 16px;
-    width: 40px;
-    height: 40px;
+    margin-top: 8px;
 }
+
 
 
 
